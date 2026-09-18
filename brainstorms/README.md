@@ -17,3 +17,4 @@ here on.
 |---|---|
 | 2026-09-18 | [Repo Scaffold](./2026-09-18%20—%20Repo%20Scaffold.md) |
 | 2026-09-18 | [zapret Prior-Art Triage — Repo, Tagging System, First Passes](./2026-09-18%2019-46%20%E2%80%94%20zapret%20Prior-Art%20Triage%20%E2%80%94%20Repo%2C%20Tagging%20System%2C%20First%20Passes.md) |
+| 2026-09-18 | [zapret Prior-Art — Commit Pass Complete, Constraints Catalog Growing](./2026-09-18%2020-32%20%E2%80%94%20zapret%20Prior-Art%20%E2%80%94%20Commit%20Pass%20Complete%2C%20Constraints%20Catalog%20Growing.md) |
