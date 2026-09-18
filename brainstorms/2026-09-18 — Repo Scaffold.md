@@ -70,3 +70,29 @@ The actual strategy ADT (desync mode, fooling method, split markers,
 phase-ordering and mode-compatibility validated at construction) and
 the real `nfqws` process-invocation wrapper — the next real
 implementation work, not yet started.
+
+
+## Correction: two real CI failures on the first real PR
+
+The scaffold PR's own CI caught two genuine bugs, not caught by local
+testing in this session's sandbox (which lacks `mold` regardless, so
+local success there was never going to be conclusive on this point):
+
+**`mold` not installed on the runner.** `.cargo/config.toml` pins
+the `mold` linker — present via the local Nix dev shell, not on
+GitHub's runner by default. `ci.yml` was copied from `argenv`'s,
+which has no such pin and so never needed this step. Checked
+`sync-mesh-core`'s real `ci.yml` rather than guessed, found it
+already solves the identical problem with
+`sudo apt-get install -y mold`, and applied the same fix.
+
+**Missing PR-title scope.** The scaffold PR's own title used scope
+`scaffold`, which wasn't in `pr-title.yml`'s allowed list yet — the
+check correctly caught its own first real usage. Added it as a
+standing scope rather than retitling around it, since large
+structural changes are a real recurring category for this repo, not
+a one-off.
+
+Both fixed in a follow-up commit on the same PR, re-run, confirmed
+green, merged. Branch protection (three required checks, squash-only)
+enabled only after that green run, not before.
