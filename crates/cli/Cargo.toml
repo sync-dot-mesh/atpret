@@ -1,0 +1,12 @@
+[package]
+name = "atpret-cli"
+description = "atpret's argv/env surface, declared entirely via argenv."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+argenv = { workspace = true }
+atpret-engine = { path = "../engine" }

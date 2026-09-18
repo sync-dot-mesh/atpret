@@ -1,0 +1,13 @@
+[package]
+name = "atpret-engine"
+description = "Typed strategy model and nfqws/winws process wrapper — the domain core of atpret."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
