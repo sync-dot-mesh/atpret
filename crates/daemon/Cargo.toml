@@ -1,0 +1,16 @@
+[package]
+name = "atpret-daemon"
+description = "atpret's composition root — wires the engine, platform invocation, and CLI-parsed config together."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "atpret"
+path = "src/main.rs"
+
+[dependencies]
+atpret-engine = { path = "../engine" }
+atpret-cli = { path = "../cli" }
