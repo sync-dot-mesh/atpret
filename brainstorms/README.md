@@ -16,3 +16,4 @@ here on.
 | Date | Entry |
 |---|---|
 | 2026-09-18 | [Repo Scaffold](./2026-09-18%20—%20Repo%20Scaffold.md) |
+| 2026-09-18 | [zapret Prior-Art Triage — Repo, Tagging System, First Passes](./2026-09-18%2019-46%20%E2%80%94%20zapret%20Prior-Art%20Triage%20%E2%80%94%20Repo%2C%20Tagging%20System%2C%20First%20Passes.md) |
